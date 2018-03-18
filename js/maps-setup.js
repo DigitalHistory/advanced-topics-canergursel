@@ -60,55 +60,55 @@ function initializeMap() {
               icon: blueURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
               title: "The Sorbonne",
-              window_content: "<h1>The Sorbonne</h1><p> <a href='https://en.wikipedia.org/wiki/University_of_Paris'>The Sorbonne</a> , founded by Abelard, and where Sartre and de Beauvoir taught. The most eminent university in Paris that is also  the center of the Latin Quarter.</p>"
+              window_content: "<h1><a href='https://en.wikipedia.org/wiki/University_of_Paris'>The Sorbonne</a></h1><p>  founded by Abelard, and where Sartre and de Beauvoir . The most eminent university in Paris that is also  the center of the Latin Quarter.</p>"
              },
              {position: new google.maps.LatLng(48.842206,2.345169),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map
               title: "The École Normale Supérieure",
-              window_content: "<h1>The École Normale Supérieure</h1><p> <a href='https://en.wikipedia.org/wiki/École_Normale_Supérieure'>The École Normale Supérieure</a>, one of the most important private colleges in Paris.</p>"
+              window_content: "<h1><a href='https://en.wikipedia.org/wiki/École_Normale_Supérieure'>The École Normale Supérieure</a></h1><p>  one of the most important private colleges in Paris.</p>"
             },
             {position: new google.maps.LatLng(48.854092,2.328374),
              map: my_map,
              icon: blueURL, // this sets the image that represents the marker in the map
              title: "Sciences Po",
-             window_content: "<h1>Sciences Po</h1><p> <a href='https://en.wikipedia.org/wiki/Sciences_Po'>Sciences Po</a>, is one of the most selective Liberal Arts Univeristy in Paris, yet it is not located in the Latin Quarter.</p>"
+             window_content: "<h1> <a href='https://en.wikipedia.org/wiki/Sciences_Po'>Sciences Po</a>,</h1><p>  one of the most selective Liberal Arts Univeristy in Paris, yet it is not located in the Latin Quarter.</p>"
            },
            {position: new google.maps.LatLng(48.848884,2.345490),
             map: my_map,
             icon: blueURL, // this sets the image that represents the marker in the map
             title: "Collège de France",
-            window_content: "<h1>Collège de France </h1><p> <a href='https://en.wikipedia.org/wiki/Collège_de_France#cite_note-1'>Collège de France </a> is considered as the most prestigious research university in France. It is widely known as the free lectures that are taught by the distinguished professors that are selected by the faculty. </p>"
+            window_content: "<h1><a href='https://en.wikipedia.org/wiki/Collège_de_France#cite_note-1'>Collège de France </a> </h1><p>  considered as the most prestigious research university in France. It is widely known as the free lectures that are taught by the distinguished professors that are selected by the faculty. </p>"
           },
            {position: new google.maps.LatLng(48.843824,2.341592),
             map: my_map,
             icon: blueURL, // this sets the image that represents the marker in the map
             title: "Union Nationale des Étudiants de France",
-            window_content: "<h1>Union Nationale des Étudiants de France</h1><p> <a href='https://en.wikipedia.org/wiki/Union_Nationale_des_Étudiants_de_France'>Union Nationale des Étudiants de France</a>, where the student riots in may 1968 started. </p>"
+            window_content: "<h1><a href='https://en.wikipedia.org/wiki/Union_Nationale_des_Étudiants_de_France'>Union Nationale des Étudiants de France</a></h1><p>  where the student riots in may 1968 started. </p>"
           },
           {position: new google.maps.LatLng(48.854660,2.337821),
            map: my_map,
            icon: blueURL, // this sets the image that represents the marker in the map
            title: "Université PSL",
-           window_content: "<h1>Université PSL</h1><p> <a href='https://en.wikipedia.org/wiki/PSL_Research_University'>PSL Research Univeristy</a>, is a newly founded research university, which is the outcome of the merger of the technical universities that were located in the Latin Quarter . </p>"
+           window_content: "<h1><a href='https://en.wikipedia.org/wiki/PSL_Research_University'>PSL Research Univeristy</a></h1><p>  a newly founded research university, which is the outcome of the merger of the technical universities that were located in the Latin Quarter . </p>"
          },
          {position: new google.maps.LatLng(48.854159,2.332605),
           map: my_map,
           icon: redURL, // this sets the image that represents the marker in the map
           title: "Café de Flore",
-          window_content: "<h1>Café de Flore</h1><p> <a href='https://en.wikipedia.org/wiki/Café_de_Flore'>Café de Flore </a>, favorite spot of the Existentialists. Sartre, and de Beauvoir spent most of their time in Café de Flore to dine or to write their discourses. Picasso, Roland Barthes were the other notable regulars. According to this <a href='https://www.independent.co.uk/arts-entertainment/travel-france-following-in-sartres-footsteps-1073545.html'> article</a> there occurs montly philosophical engagements. </p>"
+          window_content: "<h1><a href='https://en.wikipedia.org/wiki/Café_de_Flore'>Café de Flore </a></h1><p>  favorite spot of the Existentialists. Sartre, and de Beauvoir spent most of their time in Café de Flore to dine or to write their discourses. Picasso, Roland Barthes were the other notable regulars. According to this <a href='https://www.independent.co.uk/arts-entertainment/travel-france-following-in-sartres-footsteps-1073545.html'> article</a> there occurs montly philosophical engagements. </p>"
         },
         {position: new google.maps.LatLng(48.854052,2.333106),
          map: my_map,
          icon: redURL, // this sets the image that represents the marker in the map
          title: "Les Deux Magots",
-         window_content: "<h1>Les Deux Magots</h1><p> <a href='https://en.wikipedia.org/wiki/Les_Deux_Magots'>Les Deux Magots </a>, Hemmingway's and Baldwin's favorite. </p>"
+         window_content: "<h1><a href='https://en.wikipedia.org/wiki/Les_Deux_Magots'>Les Deux Magots </a></h1><p>  Hemmingway's and Baldwin's favorite. </p>"
        },
        {position: new google.maps.LatLng(48.853960,2.334351),
         map: my_map,
         icon: redURL, // this sets the image that represents the marker in the map
         title: "Abbey of Saint-Germain-des-Prés",
-        window_content: "<h1>Abbey of Saint-Germain-des-Prés</h1><p> <a href='https://en.wikipedia.org/wiki/Abbey_of_Saint-Germain-des-Prés'>Abbey of Saint-Germain-des-Prés</a> the Cartesian Spirit. </p>"
+        window_content: "<h1><a href='https://en.wikipedia.org/wiki/Abbey_of_Saint-Germain-des-Prés'>Abbey of Saint-Germain-des-Prés</a></h1><p>  the Cartesian Spirit. </p>"
       },
       {position: new google.maps.LatLng(48.851447,2.333679),
        map: my_map,
@@ -136,8 +136,8 @@ function initializeMap() {
         // be careful not to introduce syntax errors though.
       legendHTML +=
         "<div class=\"pointer\" onclick=\"locateMarker(my_markers[" + j + "])\"> " +
-          marker.window_content + "</div>";
-        marker.info = new google.maps.InfoWindow({content: marker.window_content});
+          marker.title + "</div>";
+        marker.info = new google.maps.InfoWindow({content: marker.title});
         var listener = google.maps.event.addListener(marker, 'click', function() {
             // if you want to allow multiple info windows, uncomment the next line
             // and comment out the two lines that follow it
