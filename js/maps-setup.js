@@ -156,8 +156,8 @@ function initializeMap() {
     document.getElementById("map_legend").innerHTML = legendHTML;
   my_map.data.addGeoJson(myGeoJSON);
 
-  var romeCircle = new google.maps.Rectangle({
-    strokeColor: '#FF000',
+  var rouglhyLeftbank = new google.maps.Rectangle({
+    strokeColor: '#FF0000',
     strokeOpacity: 0.8,
     strokeWeight: 2,
     fillColor: '#FF0000',
@@ -166,14 +166,14 @@ function initializeMap() {
     // add features.
     map: my_map,
     bounds: {
-      north: 42.685,
-      south: 40.671,
-      east: 12.501,
-      west: 12.485
+      north: 48.858258,
+      south: 48.822202,
+      east: 2.357499,
+      west: 2.294296,
     },
 
-    center: {"lat": 41.9000, "lng":12.5000},
-    radius: 1000
+    center: {"lat": 48.839882, "lng":2.329947},
+    radius: 300
   });
   my_map.data.setStyle(function (feature) {
     var thisColor = feature.getProperty("myColor");
