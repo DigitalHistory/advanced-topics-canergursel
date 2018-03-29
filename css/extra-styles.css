@@ -125,11 +125,15 @@ div.gm-style-iw blockquote {
    margin: 15px;
    float: right;
 }
+.sidepanel img {
+  width: 100%;
+  height: 100%;
+}
 
 #popcorn-container {
    border: 4px solid #aa0000;
-   width: 425px;
-   height: 640px;
+   width: 225px;
+   height: 300px;
    overflow: scroll;
    background-color: #F4F4F4;
    padding: 10px;
