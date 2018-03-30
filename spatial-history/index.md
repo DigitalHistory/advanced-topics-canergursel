@@ -1,20 +1,6 @@
-# This Map Should Deal with a Historical Topic You Care About
+# How France "Learned to Think in the Left Bank", a Spatial Analysis on the Evolution of the French Intellectual Thought
 
-Your first task will be to locate some real places.  You can get the precise locations at various services, e.g [latlong.net](http://www.latlong.net/).
-
-Then add those places to the marker array in [../js/maps-setup.js](../js/maps-setup.js) (see instructions there).
-
-replace this text and the text with your essay. But be sure not to eliminate the html elements that
-are contained inside this textarea, or [your map won't work at all!][1] [1](#one)
-<figure>
-![](https://upload.wikimedia.org/wikipedia/commons/a/ab/Lolcat_in_folder.jpg "this is the alt text")<figcaption>caption</figcaption>
-</figure>
-It makes sense to put an introductory paragraph here, above the map and buttons. To change the bootswatch thenme, change "united" to one of the other theme names listed at [strapdownjs.com](http://strapdownjs.com/).
-
-[1]: http://hello.com
-[^1]: This is my first footnote
-
-<a id="#one">1: </a> some text here
+ Paris’ importance for 20th century Western thought was not because of its flamboyant streets, or its lively nightlife.  Rather, closeness of Paris’ prominent educational institutes to one another set up the environment for French thought to cultivate more attractively than any other city in the Europe. With the charismatic figures of French philosophy of 21th century who were teaching in the Latin Quarter in the Left Bank, Paris, especially the Cafés in the Left Bank evaluated into the hub of bohemianism by attracting intellectuals from all around the world. Along with the transformation of cafés to intellectual hubs, French intellectuals that were using those public spaces as the intellectual centers became more than just academicians, by being prominent cultural figures. The proximity of those intellectual centers to one another, thus the spatial aspects of the Left Bank was the main cause of this transformation, which maintained the French hegemony in the 20th century humanities.   
 
 
 <div class="markers">
@@ -30,10 +16,21 @@ It makes sense to put an introductory paragraph here, above the map and buttons.
   <div id="map_legend"></div>
 </div>
 
-# Next Section
+# Historical Background
 
-The rest of your essay should go under the map, probably.
+Peter Abelard is perhaps the most controversial and influential figure in the 12th century France. Due to his unorthodox teaching style which caused him and his scholars to migrate to the Left Bank of Paris [Horne, 17](https://search.library.utoronto.ca/details?8829217). There Abelard created a proto university, which is nowadays known as the famous Sorbonne. From then on to the French Revolution, Latin was the academic language in the Sorbonne, hence the area that the Sorbonne and many other universities are located became to known as the Latin Quarter, which you can see on the map as the red polygon. As Horne asserts, “from then on it came to be said that Paris ‘learned to think’ on the Left Bank”[18](https://search.library.utoronto.ca/details?8829217).
 
-## in sections like this
-also _italics_ and __bold__ which can also be written *like this* or **like this**
-etc. Be sure to [make use of links](http://digital.hackinghistory.ca) -- that's one of the reasons we write on the Web, and I've asked you to use links for all yor footnotes/references as well.  
+# Latin Quarter
+  “University central” Latin Quarter still contains the most prestigious academic institutions of France, such as the Sorbonne and Ecole Normale Superieure. Due to the proximity of those varying institutions, the Left Bank became a center for the intellectual thought in France and in the old continent till the 21th century [Matheson, 325](https://muse-jhu-edu.myaccess.library.utoronto.ca/article/198077).  Having a university central made Paris a unique place to cultivate ideas. Scholars from varying fields, mainly humanists, were located in a place that was easy for them to influence one another’s ideas. As a result of this spatial convenience, the Latin Quarter has been produced countless influential thinkers that had shaped the Western civilization.
+
+# More than Academicians
+  The Left Bank is also known as “the hub of the Existentialist movement and an associated revival of bohemianism” [Britannica](https://www.britannica.com/place/Paris/The-Invalides#ref364908).  Existentialism is identified with the philosophy of Parisian philosophers such as Jean-Paul Sartre, Simon de Beauvoir, and Albert Camus, who put _human experience_ in the center of the ontology. Sartre and de Beauvoir were professors in the Sorbonne, but they were also preeminent figures of bohemian lifestyle centered on the Left Bank. Café de Flore was their favorite location to write their texts and engage in philosophical discussions, thus they were the forerunners among the French professors who started to spend their times in those cafés to write their books and meet with their students or their lovers [Salazar, 194](https://journals-scholarsportal-info.myaccess.library.utoronto.ca/details/1015549x/v11i0002/189_lbrbrbgs.xml).
+
+  Being the center of bohemian culture, Paris attracted many internationally acclaimed intellectuals and artists. American writers such as James Baldwin and Ernst Hemmingway were located in Paris along with the many French artists, Left Bank cafés such as Les Deux Magots and Café de la Mairie evolved into intellectual meeting points for those artists.  As a consequence, Paris’ intellectual territory overflowed from the Latin Quarter to the entertainment district of the Left Bank, which is portrayed with the green polygon on the map. Nightclubs and cafés transformed into intellectual centers, in which intellectuals from various cultures spent their time to do their art, to write stories, to develop philosophies, to finish art masterpieces, or exchanged their wisdom with one another [New York Times](https://www.nytimes.com/2014/01/19/travel/james-baldwins-paris.html?_r=0). As a consequence, the Left Bank had became more than _a university central_.
+
+ Along with the reputation of Existentialism and Sartre, the regulars of the Left Bank evolved from being academicians to prominent figures in French and European lifestyle and culture. Proximity of Boulevard Saint-Germain, in which all of those cafés are located, to the Latin Quarter created an opportunity to those academicians to be more than professors. They easily moved away from universities that connotes formality, to those cafés that signifies bohemian lifestyle, hence their academic identity could not outweigh their bohemian identity. Due to the shift of French intellectuals to the cultural milieu, Existentialism is regarded as a “cultural movement rather than an identifiable philosophical position” [Stanford Encyclopedie of Philosophy](https://plato.stanford.edu/entries/existentialism/).
+
+# Conclusion
+  Due to the growing eminence of Parisian Intellectuals and the Left Bank, the Boulevard Saint-Germain started to change as the “real estate surged, wiping
+out most bookstores where gigolos read Proust, to make room for fashion
+boutiques“ [Salazar, 192](https://journals-scholarsportal-info.myaccess.library.utoronto.ca/details/1015549x/v11i0002/189_lbrbrbgs.xml).  As Salazar rightly expresses, “bookshop fell like dominos before top models” [192](https://journals-scholarsportal-info.myaccess.library.utoronto.ca/details/1015549x/v11i0002/189_lbrbrbgs.xml). Cafés that were once the center of French intellectualism became overpriced tourist spots. This gentrification in the Left Bank is fallowed by the gentrification of French hegemony in Western intellectual thought. French Intellectual hegemony ended in 2015, when Marine le Pen was the only French in Time Magazine’s list of the world’s most influential figures [Guardian](https://www.theguardian.com/books/2015/jun/13/from-left-bank-to-left-behind-where-have-the-great-french-thinkers-gone).  Unfortunately, the spatial aspects of the French Intellectualism that maintained the cultivation of the French thought in the 20th century also caused the downfall of it.
