@@ -3,11 +3,11 @@
 // whenever we need to -- they have 'global scope'
 var my_map; // this will hold the map
 var my_map_options; // this will hold the options we'll use to create the map
-var my_center = new google.maps.LatLng(48.851161,2.337486); // center of map
+var my_center = new google.maps.LatLng(41.8986,12.4768); // center of map
 var my_markers = []; // we use this in the main loop below to hold the markers
 // this one is strange.  In google maps, there is usually only one
 // infowindow object -- its content and position change when you click on a
-// marker.  This is counterintuitive, but we need to live with it.
+// marker.  This is counterintuitive, but we need to live with it.  
 var infowindow = new google.maps.InfoWindow({content: ""});
 var legendHTML = "<h1>Legend</h1>";
 
@@ -28,16 +28,16 @@ var myGeoJSON= {
     "properties":{myColor: 'red'},
     "myColor" : "red",
     "geometry":{"type":"Polygon",
-                "coordinates":[[[2.344354 ,48.853754],[2.338503,48.843276],
-                                [ 2.351549 ,48.840435],[2.354829, 48.850104],
-                                [2.344354 ,48.853754]]]}},
+                "coordinates":[[[-85.60546875,49.03786794532644],[-96.6796875,40.713955826286046],
+                                [-79.62890625,37.71859032558816],[-81.2109375,49.26780455063753],
+                                [-85.60546875,49.03786794532644]]]}},
    {"type":"Feature",
     "properties":{myColor: 'green'},
     "myColor" : "green",
      "geometry":{"type":"Polygon",
-                 "coordinates":[[[2.327963,48.857649],[2.338602,48.857185],
-                                 [2.340355,48.851943],[2.325691,48.855844],
-                                 [2.327963,48.857649]]]
+                 "coordinates":[[[-113.203125,58.35563036280967],[-114.78515624999999,51.944264879028765],
+                                 [-101.6015625,51.944264879028765],[-112.32421875,58.263287052486035],
+                                 [-113.203125,58.35563036280967]]]
                 }}]};
 
 
@@ -55,74 +55,27 @@ function initializeMap() {
                                  my_map_options);
     // this is an *array* that holds all the marker info
     var all_my_markers =
-            [{position: new google.maps.LatLng(48.848458,2.343274),
+            [{position: new google.maps.LatLng(41.9000,12.5000),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
-              title: "The Sorbonne",
-              window_content: "<h1><a href='https://en.wikipedia.org/wiki/University_of_Paris'>The Sorbonne</a></h1><p>  founded by Abelard, and where Sartre and de Beauvoir . The most eminent university in Paris that is also  the center of the Latin Quarter.</p>"
+              title: "first Marker",
+              window_content: "<h1>Marker1</h1><p> and this would be the extended description</p>"
              },
-             {position: new google.maps.LatLng(48.842206,2.345169),
+             {position: new google.maps.LatLng(41.8902,12.4923),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map
-              title: "The École Normale Supérieure",
-              window_content: "<h1><a href='https://en.wikipedia.org/wiki/École_Normale_Supérieure'>The École Normale Supérieure</a></h1><p>  one of the most important private colleges in Paris.</p>"
+              title: "second Marker",
+              window_content: "<h1>Marker2</h1><p> and <a href='http://something'>this would</a> be the extended description</p>"
             },
-            {position: new google.maps.LatLng(48.854092,2.328374),
+            {position: new google.maps.LatLng(41.8986,12.4768),
              map: my_map,
-             icon: blueURL, // this sets the image that represents the marker in the map
-             title: "Sciences Po",
-             window_content: "<h1> <a href='https://en.wikipedia.org/wiki/Sciences_Po'>Sciences Po</a>,</h1><p>  one of the most selective Liberal Arts Univeristy in Paris, yet it is not located in the Latin Quarter.</p>"
-           },
-           {position: new google.maps.LatLng(48.848884,2.345490),
-            map: my_map,
-            icon: blueURL, // this sets the image that represents the marker in the map
-            title: "Collège de France",
-            window_content: "<h1><a href='https://en.wikipedia.org/wiki/Collège_de_France#cite_note-1'>Collège de France </a> </h1><p>  considered as the most prestigious research university in France. It is widely known as the free lectures that are taught by the distinguished professors that are selected by the faculty. </p>"
-          },
-           {position: new google.maps.LatLng(48.843824,2.341592),
-            map: my_map,
-            icon: blueURL, // this sets the image that represents the marker in the map
-            title: "Union Nationale des Étudiants de France",
-            window_content: "<h1><a href='https://en.wikipedia.org/wiki/Union_Nationale_des_Étudiants_de_France'>Union Nationale des Étudiants de France</a></h1><p>  where the student riots in may 1968 started. </p>"
-          },
-          {position: new google.maps.LatLng(48.854660,2.337821),
-           map: my_map,
-           icon: blueURL, // this sets the image that represents the marker in the map
-           title: "Université PSL",
-           window_content: "<h1><a href='https://en.wikipedia.org/wiki/PSL_Research_University'>PSL Research Univeristy</a></h1><p>  a newly founded research university, which is the outcome of the merger of the technical universities that were located in the Latin Quarter . </p>"
-         },
-         {position: new google.maps.LatLng(48.854159,2.332605),
-          map: my_map,
-          icon: redURL, // this sets the image that represents the marker in the map
-          title: "Café de Flore",
-          window_content: "<h1><a href='https://en.wikipedia.org/wiki/Café_de_Flore'>Café de Flore </a></h1><p>  favorite spot of the Existentialists. Sartre, and de Beauvoir spent most of their time in Café de Flore to dine or to write their discourses. Picasso, Roland Barthes were the other notable regulars. According to this <a href='https://www.independent.co.uk/arts-entertainment/travel-france-following-in-sartres-footsteps-1073545.html'> article</a> there occurs montly philosophical engagements. </p>"
-        },
-        {position: new google.maps.LatLng(48.854052,2.333106),
-         map: my_map,
-         icon: redURL, // this sets the image that represents the marker in the map
-         title: "Les Deux Magots",
-         window_content: "<h1><a href='https://en.wikipedia.org/wiki/Les_Deux_Magots'>Les Deux Magots </a></h1><p>  Hemmingway's and Baldwin's favorite. </p>"
-       },
-       {position: new google.maps.LatLng(48.853960,2.334351),
-        map: my_map,
-        icon: redURL, // this sets the image that represents the marker in the map
-        title: "Abbey of Saint-Germain-des-Prés",
-        window_content: "<h1><a href='https://en.wikipedia.org/wiki/Abbey_of_Saint-Germain-des-Prés'>Abbey of Saint-Germain-des-Prés</a></h1><p>  the Cartesian Spirit. </p>"
-      },
-      {position: new google.maps.LatLng(48.851447,2.333679),
-       map: my_map,
-       icon: redURL, // this sets the image that represents the marker in the map
-       title: "Cafe de la Mairie",
-       window_content: "<h1>Cafe de la Mairie</h1><p> The last place that Camus and Sartre met.  </p>"
-     },
-     {position: new google.maps.LatLng(48.853040,2.338843),
-      map: my_map,
-      icon: redURL, // this sets the image that represents the marker in the map
-      title: "La Procope",
-      window_content: "<h1>La Procope</h1><p> Founded in 1686. According to <a href='https://www.independent.co.uk/arts-entertainment/travel-france-following-in-sartres-footsteps-1073545.html'> this article</a> La Procope was the place where Diderot and D'Alembert 'first conceived the Encyclopedie'. </p>"
-    },
-     ];
+             icon: redURL, // this sets the image that represents the marker in the map
+             title: "third Marker",
+             window_content: '<h1>Marker3</h1><img title="Picture of Quote. Src: someone, some year"  src="https://s-media-cache-ak0.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf.jpg"/>' +
+             '<blockquote>quote quote quote quote</blockquote>'
+           }
+            ];
 
     for (j = 0; j < all_my_markers.length; j++) {
         var marker =  new google.maps.Marker({
@@ -133,11 +86,11 @@ function initializeMap() {
             window_content: all_my_markers[j].window_content});
 
         // this next line is ugly, and you should change it to be prettier.
-        // be careful not to introduce syntax errors though.
+        // be careful not to introduce syntax errors though.  
       legendHTML +=
         "<div class=\"pointer\" onclick=\"locateMarker(my_markers[" + j + "])\"> " +
-          marker.title + "</div>";
-        marker.info = new google.maps.InfoWindow({content: marker.title});
+          marker.window_content + "</div>";
+        marker.info = new google.maps.InfoWindow({content: marker.window_content});
         var listener = google.maps.event.addListener(marker, 'click', function() {
             // if you want to allow multiple info windows, uncomment the next line
             // and comment out the two lines that follow it
@@ -151,30 +104,30 @@ function initializeMap() {
         } else if (all_my_markers[j].icon == redURL ) {
             red_markers.push({marker:marker, listener:listener});
         }
-
+        
     }
     document.getElementById("map_legend").innerHTML = legendHTML;
   my_map.data.addGeoJson(myGeoJSON);
 
-  var rouglhyLeftbank = new google.maps.Rectangle({
+  var romeCircle = new google.maps.Rectangle({
     strokeColor: '#FF0000',
     strokeOpacity: 0.8,
     strokeWeight: 2,
     fillColor: '#FF0000',
     fillOpacity: 0.35,
     // in general, we always have to *set the map* when we
-    // add features.
+    // add features. 
     map: my_map,
     bounds: {
-      north: 48.858258,
-      south: 48.822202,
-      east: 2.357499,
-      west: 2.294296,
+      north: 42.685,
+      south: 40.671,
+      east: 12.501,
+      west: 12.485
     },
 
-    center: {"lat": 48.839882, "lng":2.329947},
-    radius: 300
-  });
+    center: {"lat": 41.9000, "lng":12.5000},
+    radius: 1000
+  });  
   my_map.data.setStyle(function (feature) {
     var thisColor = feature.getProperty("myColor");
     return {
@@ -219,7 +172,7 @@ function toggleMarkers (marker_array, map) {
 
 
 // I added this for fun.  It allows you to trigger the infowindow
-// from outside the map.
+// from outside the map.  
 function locateMarker (marker) {
     console.log(marker);
     my_map.panTo(marker.marker.position);
